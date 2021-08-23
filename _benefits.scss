@@ -55,7 +55,7 @@
                     display: none;
                 }
             }
-            .benefits__pic {
+            .benefit__pic {
                 background: #f2f5f4;
                 border-radius: 50%;
                 margin-bottom: 20px;
@@ -63,18 +63,18 @@
                     margin-right: 12px;
                     margin-bottom: 0;
                 }
-                .benefits-pic {
+                .benefit-pic {
                     width: 128px;
                     height: 128px;
                     padding: 23% 33%;
                 }
             }
-            .benefits__about {
+            .benefit__about {
                 text-align: center;
                 @include phones{
                     text-align: left;
                 }
-                .benefits-item__title {
+                .benefit__title {
                     margin-bottom: 20px;
                     font-weight: bold;
                     font-size: 27px;
@@ -83,7 +83,7 @@
                         margin-bottom: 10px;
                     }
                 }
-                .benefits-item__desc {
+                .benefit__desc {
                     @include phones {
                         line-height: 22px;
                     }
