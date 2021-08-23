@@ -1,0 +1,33 @@
+//ПЕРЕМЕННЫЕ
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 490px;
+
+//COLORS
+$white: #fff;
+$yellow: #FEDB3F;
+$hoveryellow: #FFD517;
+$black: #292929;
+$gray: #666666;
+$bggrey: #F5F5F5;
+
+@import "_media";
+
+//normalize
+@import url(../css/normalize.css);
+
+
+// fonts
+//&display=swap&subset=cyrillic-ext
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,800,800italic,900,900italic);
+
+@import "_media";
+@import "_layout";
+@import "_section";
+@import "_hero";
+@import "_fullmenu";
+@import "_benefits";
+

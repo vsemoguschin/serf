@@ -1,0 +1,94 @@
+.benefits-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    .section__title {
+        margin-bottom: 17px;
+        @include phones {
+            font-size: 36px;
+            margin-bottom: 9px;
+        }
+    }
+    .benefits__sub-title {
+        color: $gray;
+        font-size: 18px;
+        margin-bottom: 5%;
+        max-width: 400px;
+        text-align: center;
+        @include phones {
+            margin-bottom: 10%;
+        }
+    }
+    .benefits__list {
+        display: flex;
+        @include phones {
+            flex-direction: column;
+        }
+        .benefits__item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 2.5%;
+            flex: 1;
+            @include phones {
+                flex-direction: row;
+                text-align: left;
+                margin-bottom: 31px;
+            }
+            &:after {
+                content: url(../img/sep.svg);
+                position: absolute;
+                right: 0;
+                transform: translate(50%, 50px);
+                &:last-child {
+                    display: none;
+                }
+                @include tablets {
+                    display: none;
+                }
+            }
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+            .benefits__pic {
+                background: #f2f5f4;
+                border-radius: 50%;
+                margin-bottom: 20px;
+                @include phones {
+                    margin-right: 12px;
+                    margin-bottom: 0;
+                }
+                .benefits-pic {
+                    width: 128px;
+                    height: 128px;
+                    padding: 23% 33%;
+                }
+            }
+            .benefits__about {
+                text-align: center;
+                @include phones{
+                    text-align: left;
+                }
+                .benefits-item__title {
+                    margin-bottom: 20px;
+                    font-weight: bold;
+                    font-size: 27px;
+                    color: $black;
+                    @include phones {
+                        margin-bottom: 10px;
+                    }
+                }
+                .benefits-item__desc {
+                    @include phones {
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

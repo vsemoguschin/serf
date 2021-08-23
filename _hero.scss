@@ -1,0 +1,174 @@
+.hero-section {
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //text-shadow: 0px 0px 1px black;
+}
+.hero-container {
+    height: 100%;
+    color: $white;
+    display: flex;
+    align-items: flex-end;
+    @include tablets{
+        align-items: center;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 24px 2% 0;
+    @include tablets{
+        background: #1968B1;
+        height: 91px;
+        align-items: center;
+        padding-top: 0;
+        animation: myAnimation 2s;
+        @keyframes myAnimation {
+            0% {
+                height: 0;
+            }
+            // 70%{
+            //     height: 100px;
+            //     }
+            100% {
+                height: 91px;
+            }
+         }
+    }
+}
+
+.logo {
+    width: 55px;
+    height: 40px;
+    fill: $white;
+    margin-right: 22px;
+}
+
+.menu__list {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3px;
+    @include tablets{
+        display: none;
+    }
+}
+
+.menu__link {
+    transition: .3s ease-in-out;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        color: $yellow;
+        
+    }
+}
+
+.menu__item {
+    white-space: nowrap;
+    margin-right: 22px;
+}
+
+.phone-icon {
+    width: 14px;
+    height: 14px;
+    fill: $white;
+}
+
+.phone-number {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+    @include tablets{
+        display: none;
+    }
+}
+
+.burger{
+    height: 24px;
+    width: 26px;
+    margin-right: 3%;
+    display: none;
+    @include tablets{
+        display: block;
+    }
+    .burger-icon{
+        height: 100%;
+        width: 100%;
+        fill: $white;
+    }
+}
+
+.hero__content {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 65px;
+    @include tablets{
+        align-items: center;
+        max-width: 100%;
+    }
+}
+
+.hero__title {
+    text-align: left;
+    line-height: 58px;
+    margin-bottom: 17px;
+    color: $white;
+    @include tablets{
+        text-align: center;
+        margin-bottom: 9px;
+    }
+}
+
+.hero__sub-title{
+    font-size: 21px;
+    margin-bottom: 39px;
+    @include tablets{
+        margin-bottom: 44px;
+    }
+}
+
+.hero__benefits{
+    margin-top: 39px;
+    display: flex;
+    @include tablets{
+        display: none;
+    }
+}
+
+.hero-benefits__item {
+    display: flex;
+    align-items: center;
+    margin-right: 39px;
+}
+
+.item__pic {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    
+    .ben-pic {
+        fill: $white;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.item__desc {
+    line-height: 18px;
+    width: 90px;
+    font-weight: bold;
+}
